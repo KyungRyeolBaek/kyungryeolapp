@@ -11,7 +11,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from flask_migrate import Migrate
 
-def __init__():
+def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '6a3261c2-2fa2-4254-8d74-17f305e4403c'
     app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://dxgkztoo:HN_JGJ6oqpaUwRFS9QGfwP2YNHwJCeZa@john.db.elephantsql.com:5432/dxgkztoo"
